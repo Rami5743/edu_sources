@@ -37,6 +37,33 @@
     --accent:#d9a86c;
     --accent-soft:#2a251d;
   }
+  /* צבע נפרד לכל קטגוריה */
+  section.math{--accent:#2f5fb3;--accent-soft:#e8eefb}
+  section.cs{--accent:#10726c;--accent-soft:#ddf0ee}
+  section.physics{--accent:#6b3fa0;--accent-soft:#eee7f8}
+  section.chem{--accent:#3f7d20;--accent-soft:#e9f3e3}
+  section.eng{--accent:#9c5410;--accent-soft:#f8ecdd}
+  section.science{--accent:#a8332f;--accent-soft:#fae8e7}
+  section.literacy{--accent:#9b2b6d;--accent-soft:#f9e6ef}
+  section.misc{--accent:#4a5b6b;--accent-soft:#e9eef2}
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]) section.math{--accent:#8fb4f0;--accent-soft:#1e2637}
+    :root:not([data-theme="light"]) section.cs{--accent:#5fc7bd;--accent-soft:#152a29}
+    :root:not([data-theme="light"]) section.physics{--accent:#b795e8;--accent-soft:#241d33}
+    :root:not([data-theme="light"]) section.chem{--accent:#93c97a;--accent-soft:#1b2717}
+    :root:not([data-theme="light"]) section.eng{--accent:#e0a35d;--accent-soft:#2c2318}
+    :root:not([data-theme="light"]) section.science{--accent:#ef8b83;--accent-soft:#2e1d1c}
+    :root:not([data-theme="light"]) section.literacy{--accent:#e88ec0;--accent-soft:#2d1b26}
+    :root:not([data-theme="light"]) section.misc{--accent:#9db1c4;--accent-soft:#1f262c}
+  }
+  :root[data-theme="dark"] section.math{--accent:#8fb4f0;--accent-soft:#1e2637}
+  :root[data-theme="dark"] section.cs{--accent:#5fc7bd;--accent-soft:#152a29}
+  :root[data-theme="dark"] section.physics{--accent:#b795e8;--accent-soft:#241d33}
+  :root[data-theme="dark"] section.chem{--accent:#93c97a;--accent-soft:#1b2717}
+  :root[data-theme="dark"] section.eng{--accent:#e0a35d;--accent-soft:#2c2318}
+  :root[data-theme="dark"] section.science{--accent:#ef8b83;--accent-soft:#2e1d1c}
+  :root[data-theme="dark"] section.literacy{--accent:#e88ec0;--accent-soft:#2d1b26}
+  :root[data-theme="dark"] section.misc{--accent:#9db1c4;--accent-soft:#1f262c}
   *{box-sizing:border-box}
   html{-webkit-text-size-adjust:100%}
   body{
@@ -64,8 +91,9 @@
   section{
     background:var(--surface);
     border:1px solid var(--line);
+    border-top:3px solid var(--accent);
     border-radius:14px;
-    padding:28px 26px 8px;
+    padding:26px 26px 8px;
     margin:0 0 28px;
   }
   section > h2{
@@ -151,7 +179,7 @@
   <div class="rule"></div>
 </header>
 
-<section>
+<section class="math">
   <h2>מתמטיקה</h2>
   <ol class="items">
     <li>
@@ -195,7 +223,7 @@
   </ol>
 </section>
 
-<section>
+<section class="cs">
   <h2>מדמ"ח</h2>
   <ol class="items">
     <li>
@@ -242,7 +270,7 @@
   </ol>
 </section>
 
-<section>
+<section class="physics">
   <h2>פיזיקה</h2>
   <p class="sub">קורסים בקמפוס IL:</p>
   <ol class="items">
@@ -265,7 +293,7 @@
   </ol>
 </section>
 
-<section>
+<section class="chem">
   <h2>כימיה</h2>
   <ul class="links"><li><a class="url" href="https://campus.gov.il/course/tau-acd-rfp2-introductiontochemistry101-he">https://campus.gov.il/course/tau-acd-rfp2-introductiontochemistry101-he</a></li></ul>
   <p>קורס טוב מאוד. יש גם קורס המשך:</p>
@@ -273,7 +301,7 @@
   <p style="margin-bottom:26px">לא רע, אבל מכיל הרבה טעויות.</p>
 </section>
 
-<section>
+<section class="eng">
   <h2>הנדסה</h2>
   <p class="sub">ערוצי יוטיוב באנגלית:</p>
   <ol class="items">
@@ -291,7 +319,7 @@
   </ol>
 </section>
 
-<section>
+<section class="science">
   <h2>מדע כללי</h2>
   <p class="sub">ערוצי מדע נוספים ביוטיוב (באנגלית)</p>
   <ol class="items">
@@ -314,7 +342,7 @@
   </ol>
 </section>
 
-<section>
+<section class="literacy">
   <h2>אוריינות וידע כללי</h2>
   <ol class="items">
     <li>
@@ -328,7 +356,7 @@
   </ol>
 </section>
 
-<section>
+<section class="misc">
   <h2>שונות</h2>
   <ol class="items">
     <li>
