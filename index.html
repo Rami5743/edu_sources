@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>מקורות לימוד מומלצים</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#faf8f4;
+    --surface:#ffffff;
+    --text:#23201c;
+    --muted:#6b645b;
+    --line:#e5dfd4;
+    --accent:#8a5a2b;
+    --accent-soft:#f3ebe0;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#17150f;
+      --surface:#201d17;
+      --text:#ece6dc;
+      --muted:#a79e91;
+      --line:#332e26;
+      --accent:#d9a86c;
+      --accent-soft:#2a251d;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#17150f;
+    --surface:#201d17;
+    --text:#ece6dc;
+    --muted:#a79e91;
+    --line:#332e26;
+    --accent:#d9a86c;
+    --accent-soft:#2a251d;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:"Heebo",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+    font-size:17px;
+    line-height:1.75;
+  }
+  .wrap{max-width:820px;margin:0 auto;padding:64px 16px 96px}
+  header{text-align:center;margin-bottom:56px}
+  header h1{
+    font-family:"Frank Ruhl Libre",Georgia,serif;
+    font-weight:700;
+    font-size:clamp(30px,6vw,44px);
+    line-height:1.25;
+    margin:0 0 14px;
+    letter-spacing:-.01em;
+  }
+  header .rule{
+    width:64px;height:2px;margin:0 auto;
+    background:var(--accent);opacity:.7;
+  }
+  section{
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:28px 26px 8px;
+    margin:0 0 28px;
+  }
+  section > h2{
+    font-family:"Frank Ruhl Libre",Georgia,serif;
+    font-size:26px;
+    font-weight:700;
+    margin:0 0 4px;
+    color:var(--accent);
+  }
+  section > h2 + .sub{
+    color:var(--muted);
+    font-size:15px;
+    margin:0 0 4px;
+  }
+  ol.items{
+    list-style:none;
+    counter-reset:item;
+    margin:18px 0 0;
+    padding:0;
+  }
+  ol.items > li{
+    counter-increment:item;
+    position:relative;
+    padding:0 46px 22px 0;
+    margin-bottom:22px;
+    border-bottom:1px solid var(--line);
+  }
+  ol.items > li:last-child{border-bottom:none;margin-bottom:0;padding-bottom:8px}
+  ol.items > li::before{
+    content:counter(item);
+    position:absolute;
+    top:2px;right:0;
+    width:30px;height:30px;
+    border-radius:50%;
+    background:var(--accent-soft);
+    color:var(--accent);
+    font-size:14px;
+    font-weight:700;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .title{
+    font-family:"Frank Ruhl Libre",Georgia,serif;
+    font-size:20px;
+    font-weight:700;
+    margin:0 0 6px;
+    line-height:1.4;
+  }
+  p{margin:0 0 10px}
+  ul.links{list-style:none;margin:0 0 10px;padding:0}
+  ul.links li{margin:0 0 4px}
+  a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
+  a:hover{border-bottom-color:var(--accent)}
+  a.url{
+    direction:ltr;
+    display:inline-block;
+    unicode-bidi:embed;
+    font-size:14.5px;
+    word-break:break-all;
+    color:var(--muted);
+  }
+  a.url:hover{color:var(--accent);border-bottom-color:var(--accent)}
+  ol.notes{margin:0 0 10px;padding-inline-start:22px}
+  ol.notes li{margin-bottom:2px}
+  footer{
+    text-align:center;
+    color:var(--muted);
+    font-size:14px;
+    margin-top:40px;
+  }
+  @media (max-width:520px){
+    body{font-size:16px}
+    .wrap{padding:40px 16px 64px}
+    section{padding:22px 18px 8px;border-radius:12px}
+    ol.items > li{padding-inline-start:0;padding-inline-end:40px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>מקורות לימוד מומלצים</h1>
+  <div class="rule"></div>
+</header>
+
+<section>
+  <h2>מתמטיקה</h2>
+  <ol class="items">
+    <li>
+      <p class="title">"המתמטיקאי הצעיר"</p>
+      <ul class="links"><li><a class="url" href="https://www.israelmath.com/">https://www.israelmath.com/</a></li></ul>
+      <p>מועדון מתמטי לצעירים (מכיתה א' עד ט'). מאוד מומלץ. יש שם מספר תחרויות לילדים צעירים, וגם הרבה חוגים במספר רמות. המדריכים בחוגים מאוד מקצועיים (חפיפה גדולה עם צוות נבחרת ישראל במתמטיקה). חלק מהחוגים מתאימים לכל מי שמתעניין במתמטיקה וחלק מכוונים לחברי נבחרת לעתיד.</p>
+    </li>
+    <li>
+      <p class="title">עשר אצבעות</p>
+      <ul class="links"><li><a class="url" href="https://www.matific.com/isr/he/home/">https://www.matific.com/isr/he/home/</a></li></ul>
+      <p>מערכת מצוינת ללמוד מתמטיקה ברמה של בית-ספר יסודי. מתאימה מגיל 3-5 עם הנחייה ומגיל 5-7 כמעט בלי הנחייה. עד גיל 5-6 עדיף להשתמש בגרסת אפליקציה לטאבלט.</p>
+      <p>יש קצת קשיים בהרשמה למערכת. אני יכול לנסות לעזור אם תיתקעו. בכל מקרה זה שווה את זה. מבחינת חומר זה מכסה רק חומר עד כיתה ו' אבל יש שם גם הרבה בעיות מאתגרות (רובן מופיעות בקטגוריה נפרדת) שיכולות לעניין תלמידים בכל הגילאים.</p>
+    </li>
+    <li>
+      <p class="title">אתר נבחרת ישראל במתמטיקה</p>
+      <ul class="links"><li><a class="url" href="https://www.weizmann.ac.il/math/IMT/">https://www.weizmann.ac.il/math/IMT/</a></li></ul>
+      <p>האתר מכיל מידע על הנבחרת. כמו כן, בלשונית הקישורים ניתן למצוא קישורים מועילים רבים.</p>
+    </li>
+    <li>
+      <p class="title">Euclid the game ו- Euclidea</p>
+      <ul class="links">
+        <li><a class="url" href="https://kasperpeulen.github.io/">https://kasperpeulen.github.io/</a></li>
+        <li><a class="url" href="https://www.euclidea.xyz">https://www.euclidea.xyz</a></li>
+      </ul>
+      <p>בניות בסרגל ומחוגה. המערכת השנייה יותר מקיפה ודידקטית כך שכדאי להתחיל ממנה. דורש קריאה באנגלית או ברוסית, ולכן נדרשת הנחייה בדרך כלל. מתאים מגיל 6-8. מכיוון שהנושא מוזנח במערכת החינוך שלנו, זה יכול לאתגר ללא הגבלת גיל.</p>
+    </li>
+    <li>
+      <p class="title">3Blue1Brown</p>
+      <ul class="links"><li><a class="url" href="https://www.youtube.com/c/3blue1brown">https://www.youtube.com/c/3blue1brown</a></li></ul>
+      <p>ערוץ היוטיוב החביב עליי. מעמיק, רציני ומאוד מושקע. מכוון לרמה של תואר ראשון ומעלה, אבל עושה מאמץ יוצא דופן להנגיש את החומר, כך שיכול להתאים לילדים עם הנחייה. הסרטונים באנגלית, אבל לחלק יש תרגום (טקסט) לעברית. הוא גם קרא לצופים להוסיף תרגום (ולשלוח לו). זה יכול להיות שירות מצוין לקהילה!</p>
+    </li>
+    <li>
+      <p class="title">פלייליסטים מומלצים ביוטיוב על מתמטיקה לילדים (בעברית)</p>
+      <ul class="links">
+        <li><a class="url" href="https://www.youtube.com/watch?v=RDy_mpnPudg&amp;list=PLuEFhJaDsHzAutLjVceEOoDUGBHDb30Vy">https://www.youtube.com/watch?v=RDy_mpnPudg&amp;list=PLuEFhJaDsHzAutLjVceEOoDUGBHDb30Vy</a></li>
+        <li><a class="url" href="https://www.youtube.com/watch?v=lgZtuGgAZvo&amp;list=PLuEFhJaDsHzC8I6VMedcHTPZJJXjowBAs">https://www.youtube.com/watch?v=lgZtuGgAZvo&amp;list=PLuEFhJaDsHzC8I6VMedcHTPZJJXjowBAs</a></li>
+        <li><a class="url" href="https://www.youtube.com/watch?v=nyWxRwk_Lgc&amp;list=PLuEFhJaDsHzBeExIINXiNLLCJmQDOpoMc">https://www.youtube.com/watch?v=nyWxRwk_Lgc&amp;list=PLuEFhJaDsHzBeExIINXiNLLCJmQDOpoMc</a></li>
+        <li><a class="url" href="https://www.youtube.com/watch?v=PQYes5ij2KI&amp;list=PLuEFhJaDsHzA50THkWlyxGw0U0PV4Db4f">https://www.youtube.com/watch?v=PQYes5ij2KI&amp;list=PLuEFhJaDsHzA50THkWlyxGw0U0PV4Db4f</a></li>
+      </ul>
+    </li>
+  </ol>
+</section>
+
+<section>
+  <h2>מדמ"ח</h2>
+  <ol class="items">
+    <li>
+      <p class="title">CodeMonkey</p>
+      <ul class="links"><li><a class="url" href="https://www.codemonkey.com/">https://www.codemonkey.com/</a></li></ul>
+      <p>לימוד תכנות לילדים. קהל היעד (ודרישות ההנחייה) דומה לזה של "עשר אצבעות". הדגש העיקרי הוא על קונספטים תכנותיים ועל מנשק משתמש ולא על אלגוריתמים.</p>
+    </li>
+    <li>
+      <p class="title">Project Euler</p>
+      <ul class="links"><li><a class="url" href="https://projecteuler.net/">https://projecteuler.net/</a></li></ul>
+      <p>רשימת בעיות תכנות. מאוד אלגוריתמי (ודי מתמטי), לא מלמד דבר על הנדסת תוכנה, מנשק משתמש וכדומה. דורש הנחייה כבדה יחסית לצעירים (לפחות בהתחלה). דורש גם ידע מתמטי בתורת המספרים הבסיסית (מספרים ראשוניים ושאריות).</p>
+    </li>
+    <li>
+      <p class="title">המכונה האחת</p>
+      <ul class="links"><li><a class="url" href="https://rami5743.github.io/TheOneMachine">https://rami5743.github.io/TheOneMachine</a></li></ul>
+      <p>לומדה שאני כותב. עדיין בפיתוח. הלומדה היא על פי הקורס From nand to Tetris מהסעיף הבא.</p>
+    </li>
+    <li>
+      <p class="title">From nand to Tetris</p>
+      <ul class="links">
+        <li><a class="url" href="https://www.nand2tetris.org/">https://www.nand2tetris.org/</a></li>
+        <li><a class="url" href="https://campus.gov.il/course/huji-acd-huji-nand2tetris/">https://campus.gov.il/course/huji-acd-huji-nand2tetris/</a></li>
+        <li><a class="url" href="https://www.youtube.com/watch?v=LqirVc5SlW0&amp;list=PLrDd_kMiAuNmSb-CKWQqq9oBFN_KNMTaI">https://www.youtube.com/watch?v=LqirVc5SlW0&amp;list=PLrDd_kMiAuNmSb-CKWQqq9oBFN_KNMTaI</a></li>
+      </ul>
+      <p>קורס מצוין בקמפוס IL.</p>
+      <p>מיועד לתלמידי שנה א' בתואר ראשון במדמ"ח אבל מתאים גם לקהל הרחב ועם הנחייה גם לילדים.</p>
+      <p>כדאי (אבל לא חובה) להכיר קצת תכנות לפני זה (למשל משימוש בשני הסעיפים הקודמים). הקורס מסביר איך בונים מחשב ותשתית תוכנה כמעט מאפס.</p>
+      <p>הקורס מכיל הרצאות, משימות, וחבילת תוכנה המאפשרת לבדוק ביצוע נכון של המשימות.</p>
+      <p>את חבילת התוכנה והמשימות מורידים כאן:</p>
+      <ul class="links"><li><a class="url" href="https://drive.google.com/file/d/1KcFPj8KQ_QAHheFmLCqs5iqC_0NCndvs/view">https://drive.google.com/file/d/1KcFPj8KQ_QAHheFmLCqs5iqC_0NCndvs/view</a></li></ul>
+      <p>ההרצאות בעברית אבל בשפה גבוהה למדי, כך שלילדים צעירים נדרשת הנחייה בדרך כלל. מבחינת חומר נדרשת די מעט הנחייה החל מגיל 7-9.</p>
+    </li>
+    <li>
+      <p>"המתמטיקאי הצעיר" פתח לאחרונה חוגים במדמ"ח.</p>
+    </li>
+    <li>
+      <ul class="links"><li><a class="url" href="https://campus.gov.il/course/tau-acd-rfp2-cspythonintroduction-he/">https://campus.gov.il/course/tau-acd-rfp2-cspythonintroduction-he/</a></li></ul>
+      <p>קורס בסיסי של אוניברסיטת תל-אביב בתכנות ומדעי מחשב.</p>
+    </li>
+    <li>
+      <ul class="links"><li><a class="url" href="https://campus.gov.il/course/cs-gov-pythonselfpy101-he">https://campus.gov.il/course/cs-gov-pythonselfpy101-he</a></li></ul>
+      <p>קורס בסיסי בשפת פיתון בקמפוס IL. קצת יותר תובעני מהקודם, אבל מכיל קצת חוסרים בהסברים.</p>
+    </li>
+  </ol>
+</section>
+
+<section>
+  <h2>פיזיקה</h2>
+  <p class="sub">קורסים בקמפוס IL:</p>
+  <ol class="items">
+    <li>
+      <ul class="links"><li><a class="url" href="https://campus.gov.il/course/tau-acd-rfp2-physicsintro101-he">https://campus.gov.il/course/tau-acd-rfp2-physicsintro101-he</a></li></ul>
+      <p>קורס מצוין, שמסביר את האינטואיציה הפיזיקלית ואת הדרך המדעית לחשוב על דברים, אבל שטחי למדי.</p>
+    </li>
+    <li>
+      <ul class="links"><li><a class="url" href="https://campus.gov.il/course/biu-acd-biu-introductiontophysicsmechanics-he">https://campus.gov.il/course/biu-acd-biu-introductiontophysicsmechanics-he</a></li></ul>
+      <p>קורס מעמיק ומקיף יותר, אבל חסר את היתרונות שיש לקורס הקודם.</p>
+    </li>
+    <li>
+      <ul class="links"><li><a class="url" href="https://campus.gov.il/course/moe-edu-matric-physicsmechanics-he">https://campus.gov.il/course/moe-edu-matric-physicsmechanics-he</a></li></ul>
+      <p>לא בדקתי. מבחינת נושאים נראה דומה ל-(2) אבל קצת פחות מקיף (אין אנרגיה).</p>
+    </li>
+    <li>
+      <ul class="links"><li><a class="url" href="https://campus.gov.il/course/moe-edu-matric-physicselectricity-he">https://campus.gov.il/course/moe-edu-matric-physicselectricity-he</a></li></ul>
+      <p>לא בדקתי כלל.</p>
+    </li>
+  </ol>
+</section>
+
+<section>
+  <h2>כימיה</h2>
+  <ul class="links"><li><a class="url" href="https://campus.gov.il/course/tau-acd-rfp2-introductiontochemistry101-he">https://campus.gov.il/course/tau-acd-rfp2-introductiontochemistry101-he</a></li></ul>
+  <p>קורס טוב מאוד. יש גם קורס המשך:</p>
+  <ul class="links"><li><a class="url" href="https://campus.gov.il/course/tau-acd-nrfp-introductiontochemistry102-he/">https://campus.gov.il/course/tau-acd-nrfp-introductiontochemistry102-he/</a></li></ul>
+  <p style="margin-bottom:26px">לא רע, אבל מכיל הרבה טעויות.</p>
+</section>
+
+<section>
+  <h2>הנדסה</h2>
+  <p class="sub">ערוצי יוטיוב באנגלית:</p>
+  <ol class="items">
+    <li>
+      <ul class="links"><li><a class="url" href="https://www.youtube.com/@PracticalEngineeringChannel">https://www.youtube.com/@PracticalEngineeringChannel</a></li></ul>
+      <p>ערוץ מקצועי ומעניין, לפעמים קצת יבש.</p>
+    </li>
+    <li>
+      <p>ערוצים חביבים בהנדסה. על הגבול בין הבידור להשכלה:</p>
+      <ul class="links">
+        <li><a class="url" href="https://www.youtube.com/channel/UCY1kMZp36IQSyNx_9h4mpCg">https://www.youtube.com/channel/UCY1kMZp36IQSyNx_9h4mpCg</a></li>
+        <li><a class="url" href="https://www.youtube.com/channel/UC6107grRI4m0o2-emgoDnAA">https://www.youtube.com/channel/UC6107grRI4m0o2-emgoDnAA</a></li>
+      </ul>
+    </li>
+  </ol>
+</section>
+
+<section>
+  <h2>מדע כללי</h2>
+  <p class="sub">ערוצי מדע נוספים ביוטיוב (באנגלית)</p>
+  <ol class="items">
+    <li>
+      <ul class="links"><li><a class="url" href="https://www.youtube.com/channel/UCHnyfMqiRRG1u-2MsSQLbXA">https://www.youtube.com/channel/UCHnyfMqiRRG1u-2MsSQLbXA</a></li></ul>
+      <p>אחד מערוצי היוטיוב החביבים עליי (לדעתי, שני רק ל-3blue1brown). מאוד מקצועי ומאוד נגיש. עוסק בתחומים על כל הספקטרום המדעי ובמגוון רחב של רמות.</p>
+    </li>
+    <li>
+      <ul class="links"><li><a class="url" href="https://www.youtube.com/channel/UCsXVk37bltHxD1rDPwtNM8Q">https://www.youtube.com/channel/UCsXVk37bltHxD1rDPwtNM8Q</a></li></ul>
+      <p>ערוץ לא רע במדע כללי ובמה שמסביב. מקצועי, מקיף ונגיש. סובל ממספר חסרונות:</p>
+      <ol class="notes" type="א">
+        <li>עוסק יותר מדי בפוליטיקה. מנסה להיות אובייקטיבי וכמובן לא ממש מצליח.</li>
+        <li>לפעמים מעט אפל מדי. לכן לאו דווקא מתאים לילדים למרות שמבחינת תוכן הוא נגיש.</li>
+        <li>לפעמים מטיף מדי ומלא מדי בעצמו.</li>
+        <li>הגרפיקה מתאימה לטעם מאוד ייחודי (לא שלי).</li>
+      </ol>
+      <p>לסיכום, ממליץ לבדוק לפני שמראים לילדים. פלייליסט מומלץ מהערוץ:</p>
+      <ul class="links"><li><a class="url" href="https://www.youtube.com/playlist?list=PLFs4vir_WsTwEd-nJgVJCZPNL3HALHHpF">https://www.youtube.com/playlist?list=PLFs4vir_WsTwEd-nJgVJCZPNL3HALHHpF</a></li></ul>
+    </li>
+  </ol>
+</section>
+
+<section>
+  <h2>אוריינות וידע כללי</h2>
+  <ol class="items">
+    <li>
+      <ul class="links"><li><a class="url" href="https://www.hachtava.co.il/">https://www.hachtava.co.il/</a></li></ul>
+      <p>אתר עם הכתבות ולימודי הקלדה עיוורת בעברית ואנגלית.</p>
+    </li>
+    <li>
+      <ul class="links"><li><a class="url" href="https://world-geography-games.com/">https://world-geography-games.com/</a></li></ul>
+      <p>משחק ללימוד גאוגרפיה.</p>
+    </li>
+  </ol>
+</section>
+
+<section>
+  <h2>שונות</h2>
+  <ol class="items">
+    <li>
+      <p>חומרים לימודיים בנושאים שונים שהכנתי \ אספתי (פוסטרים \ דפי עבודה ועוד):</p>
+      <ul class="links"><li><a class="url" href="https://www.dropbox.com/sh/56uxvg4dzvzog1h/AAALmDhUbcKNcsmIsBFmBsC8a?dl=0">https://www.dropbox.com/sh/56uxvg4dzvzog1h/AAALmDhUbcKNcsmIsBFmBsC8a?dl=0</a></li></ul>
+    </li>
+    <li>
+      <p>משחקים שיצרנו:</p>
+      <ul class="links"><li><a class="url" href="https://www.thegamecrafter.com/designers/science-games">https://www.thegamecrafter.com/designers/science-games</a></li></ul>
+    </li>
+    <li>
+      <p>מודלים תלת-ממדיים שיצרתי:</p>
+      <ul class="links"><li><a class="url" href="https://www.shapeways.com/shops/mathmodels">https://www.shapeways.com/shops/mathmodels</a></li></ul>
+    </li>
+    <li>
+      <p>מצגת נחמדה:</p>
+      <ul class="links"><li><a class="url" href="https://htwins.net/scale2/">https://htwins.net/scale2/</a></li></ul>
+    </li>
+  </ol>
+</section>
+
+</div>
+</body>
+</html>
