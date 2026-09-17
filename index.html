@@ -65,7 +65,8 @@
   :root[data-theme="dark"] section.literacy{--accent:#e88ec0;--accent-soft:#2d1b26}
   :root[data-theme="dark"] section.misc{--accent:#9db1c4;--accent-soft:#1f262c}
   *{box-sizing:border-box}
-  html{-webkit-text-size-adjust:100%}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+  @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
   body{
     margin:0;
     background:var(--bg);
@@ -121,6 +122,12 @@
     margin-bottom:22px;
     border-bottom:1px solid var(--line);
   }
+  ol.items > li{scroll-margin-top:24px}
+  ol.items > li:target{
+    background:var(--accent-soft);
+    border-radius:10px;
+    box-shadow:0 0 0 12px var(--accent-soft);
+  }
   ol.items > li:last-child{border-bottom:none;margin-bottom:0;padding-bottom:8px}
   ol.items > li::before{
     content:counter(item);
@@ -144,6 +151,8 @@
   p{margin:0 0 10px}
   ul.links{list-style:none;margin:0 0 10px;padding:0}
   ul.links li{margin:0 0 4px}
+  ul.links.named li{margin:0 0 12px}
+  .linkname{display:block;font-weight:500;line-height:1.5}
   a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
   a:hover{border-bottom-color:var(--accent)}
   a.url{
@@ -182,7 +191,7 @@
 <section class="math">
   <h2>מתמטיקה</h2>
   <ol class="items">
-    <li>
+    <li id="young-mathematician">
       <p class="title">"המתמטיקאי הצעיר"</p>
       <ul class="links"><li><a class="url" href="https://www.israelmath.com/">https://www.israelmath.com/</a></li></ul>
       <p>מועדון מתמטי לצעירים (מכיתה א' עד ט'). מאוד מומלץ. יש שם מספר תחרויות לילדים צעירים, וגם הרבה חוגים במספר רמות. המדריכים בחוגים מאוד מקצועיים (חפיפה גדולה עם צוות נבחרת ישראל במתמטיקה). חלק מהחוגים מתאימים לכל מי שמתעניין במתמטיקה וחלק מכוונים לחברי נבחרת לעתיד.</p>
@@ -213,11 +222,11 @@
     </li>
     <li>
       <p class="title">פלייליסטים מומלצים ביוטיוב על מתמטיקה לילדים (בעברית)</p>
-      <ul class="links">
-        <li><a class="url" href="https://www.youtube.com/watch?v=RDy_mpnPudg&amp;list=PLuEFhJaDsHzAutLjVceEOoDUGBHDb30Vy">https://www.youtube.com/watch?v=RDy_mpnPudg&amp;list=PLuEFhJaDsHzAutLjVceEOoDUGBHDb30Vy</a></li>
-        <li><a class="url" href="https://www.youtube.com/watch?v=lgZtuGgAZvo&amp;list=PLuEFhJaDsHzC8I6VMedcHTPZJJXjowBAs">https://www.youtube.com/watch?v=lgZtuGgAZvo&amp;list=PLuEFhJaDsHzC8I6VMedcHTPZJJXjowBAs</a></li>
-        <li><a class="url" href="https://www.youtube.com/watch?v=nyWxRwk_Lgc&amp;list=PLuEFhJaDsHzBeExIINXiNLLCJmQDOpoMc">https://www.youtube.com/watch?v=nyWxRwk_Lgc&amp;list=PLuEFhJaDsHzBeExIINXiNLLCJmQDOpoMc</a></li>
-        <li><a class="url" href="https://www.youtube.com/watch?v=PQYes5ij2KI&amp;list=PLuEFhJaDsHzA50THkWlyxGw0U0PV4Db4f">https://www.youtube.com/watch?v=PQYes5ij2KI&amp;list=PLuEFhJaDsHzA50THkWlyxGw0U0PV4Db4f</a></li>
+      <ul class="links named">
+        <li><span class="linkname">חשבון פשוט</span><a class="url" href="https://www.youtube.com/watch?v=RDy_mpnPudg&amp;list=PLuEFhJaDsHzAutLjVceEOoDUGBHDb30Vy">https://www.youtube.com/watch?v=RDy_mpnPudg&amp;list=PLuEFhJaDsHzAutLjVceEOoDUGBHDb30Vy</a></li>
+        <li><span class="linkname">גיאומטריה: נא להכיר</span><a class="url" href="https://www.youtube.com/watch?v=lgZtuGgAZvo&amp;list=PLuEFhJaDsHzC8I6VMedcHTPZJJXjowBAs">https://www.youtube.com/watch?v=lgZtuGgAZvo&amp;list=PLuEFhJaDsHzC8I6VMedcHTPZJJXjowBAs</a></li>
+        <li><span class="linkname">מתי מתוק בלש מתמטי</span><a class="url" href="https://www.youtube.com/watch?v=nyWxRwk_Lgc&amp;list=PLuEFhJaDsHzBeExIINXiNLLCJmQDOpoMc">https://www.youtube.com/watch?v=nyWxRwk_Lgc&amp;list=PLuEFhJaDsHzBeExIINXiNLLCJmQDOpoMc</a></li>
+        <li><span class="linkname">תורת המספרים לילדים</span><a class="url" href="https://www.youtube.com/watch?v=PQYes5ij2KI&amp;list=PLuEFhJaDsHzA50THkWlyxGw0U0PV4Db4f">https://www.youtube.com/watch?v=PQYes5ij2KI&amp;list=PLuEFhJaDsHzA50THkWlyxGw0U0PV4Db4f</a></li>
       </ul>
     </li>
   </ol>
@@ -239,9 +248,9 @@
     <li>
       <p class="title">המכונה האחת</p>
       <ul class="links"><li><a class="url" href="https://rami5743.github.io/TheOneMachine">https://rami5743.github.io/TheOneMachine</a></li></ul>
-      <p>לומדה שאני כותב. עדיין בפיתוח. הלומדה היא על פי הקורס From nand to Tetris מהסעיף הבא.</p>
+      <p>לומדה שאני כותב. עדיין בפיתוח. הלומדה היא על פי הקורס <a href="#nand2tetris">From nand to Tetris</a> מהסעיף הבא.</p>
     </li>
-    <li>
+    <li id="nand2tetris">
       <p class="title">From nand to Tetris</p>
       <ul class="links">
         <li><a class="url" href="https://www.nand2tetris.org/">https://www.nand2tetris.org/</a></li>
@@ -257,7 +266,7 @@
       <p>ההרצאות בעברית אבל בשפה גבוהה למדי, כך שלילדים צעירים נדרשת הנחייה בדרך כלל. מבחינת חומר נדרשת די מעט הנחייה החל מגיל 7-9.</p>
     </li>
     <li>
-      <p>"המתמטיקאי הצעיר" פתח לאחרונה חוגים במדמ"ח.</p>
+      <p><a href="#young-mathematician">"המתמטיקאי הצעיר"</a> פתח לאחרונה חוגים במדמ"ח.</p>
     </li>
     <li>
       <ul class="links"><li><a class="url" href="https://campus.gov.il/course/tau-acd-rfp2-cspythonintroduction-he/">https://campus.gov.il/course/tau-acd-rfp2-cspythonintroduction-he/</a></li></ul>
