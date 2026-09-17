@@ -149,21 +149,15 @@
     line-height:1.4;
   }
   p{margin:0 0 10px}
-  ul.links{list-style:none;margin:0 0 10px;padding:0}
-  ul.links li{margin:0 0 4px}
-  ul.links.named li{margin:0 0 12px}
-  .linkname{display:block;font-weight:500;line-height:1.5}
+  ul.links{list-style:none;margin:0 0 12px;padding:0}
+  ul.links li{margin:0 0 6px}
+  p.go{margin:0 0 12px}
   a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
   a:hover{border-bottom-color:var(--accent)}
-  a.url{
-    direction:ltr;
-    display:inline-block;
-    unicode-bidi:embed;
-    font-size:14.5px;
-    word-break:break-all;
-    color:var(--muted);
-  }
-  a.url:hover{color:var(--accent);border-bottom-color:var(--accent)}
+  .go a,ul.links a{font-weight:500;border-bottom:1px solid var(--line)}
+  .go a:hover,ul.links a:hover{border-bottom-color:var(--accent)}
+  .title a:hover{border-bottom-color:var(--accent)}
+  .ltr{direction:ltr;unicode-bidi:isolate;display:inline-block}
   ol.notes{margin:0 0 10px;padding-inline-start:22px}
   ol.notes li{margin-bottom:2px}
   footer{
@@ -192,41 +186,33 @@
   <h2>מתמטיקה</h2>
   <ol class="items">
     <li id="young-mathematician">
-      <p class="title">"המתמטיקאי הצעיר"</p>
-      <ul class="links"><li><a class="url" href="https://www.israelmath.com/">https://www.israelmath.com/</a></li></ul>
+      <p class="title"><a href="https://www.israelmath.com/">"המתמטיקאי הצעיר"</a></p>
       <p>מועדון מתמטי לצעירים (מכיתה א' עד ט'). מאוד מומלץ. יש שם מספר תחרויות לילדים צעירים, וגם הרבה חוגים במספר רמות. המדריכים בחוגים מאוד מקצועיים (חפיפה גדולה עם צוות נבחרת ישראל במתמטיקה). חלק מהחוגים מתאימים לכל מי שמתעניין במתמטיקה וחלק מכוונים לחברי נבחרת לעתיד.</p>
     </li>
     <li id="matific">
-      <p class="title">עשר אצבעות</p>
-      <ul class="links"><li><a class="url" href="https://www.matific.com/isr/he/home/">https://www.matific.com/isr/he/home/</a></li></ul>
+      <p class="title"><a href="https://www.matific.com/isr/he/home/">עשר אצבעות</a></p>
       <p>מערכת מצוינת ללמוד מתמטיקה ברמה של בית-ספר יסודי. מתאימה מגיל 3-5 עם הנחייה ומגיל 5-7 כמעט בלי הנחייה. עד גיל 5-6 עדיף להשתמש בגרסת אפליקציה לטאבלט.</p>
       <p>יש קצת קשיים בהרשמה למערכת. אני יכול לנסות לעזור אם תיתקעו. בכל מקרה זה שווה את זה. מבחינת חומר זה מכסה רק חומר עד כיתה ו' אבל יש שם גם הרבה בעיות מאתגרות (רובן מופיעות בקטגוריה נפרדת) שיכולות לעניין תלמידים בכל הגילאים.</p>
     </li>
     <li>
-      <p class="title">אתר נבחרת ישראל במתמטיקה</p>
-      <ul class="links"><li><a class="url" href="https://www.weizmann.ac.il/math/IMT/">https://www.weizmann.ac.il/math/IMT/</a></li></ul>
+      <p class="title"><a href="https://www.weizmann.ac.il/math/IMT/">אתר נבחרת ישראל במתמטיקה</a></p>
       <p>האתר מכיל מידע על הנבחרת. כמו כן, בלשונית הקישורים ניתן למצוא קישורים מועילים רבים.</p>
     </li>
     <li>
-      <p class="title">Euclid the game ו- Euclidea</p>
-      <ul class="links">
-        <li><a class="url" href="https://kasperpeulen.github.io/">https://kasperpeulen.github.io/</a></li>
-        <li><a class="url" href="https://www.euclidea.xyz">https://www.euclidea.xyz</a></li>
-      </ul>
+      <p class="title"><a href="https://kasperpeulen.github.io/">Euclid the game</a> ו- <a href="https://www.euclidea.xyz">Euclidea</a></p>
       <p>בניות בסרגל ומחוגה. המערכת השנייה יותר מקיפה ודידקטית כך שכדאי להתחיל ממנה. דורש קריאה באנגלית או ברוסית, ולכן נדרשת הנחייה בדרך כלל. מתאים מגיל 6-8. מכיוון שהנושא מוזנח במערכת החינוך שלנו, זה יכול לאתגר ללא הגבלת גיל.</p>
     </li>
     <li id="blue3brown1">
-      <p class="title">3Blue1Brown</p>
-      <ul class="links"><li><a class="url" href="https://www.youtube.com/c/3blue1brown">https://www.youtube.com/c/3blue1brown</a></li></ul>
+      <p class="title"><a href="https://www.youtube.com/c/3blue1brown">3Blue1Brown</a></p>
       <p>ערוץ היוטיוב הכי טוב שאני מכיר. מעמיק, רציני ומאוד מושקע. מכוון לרמה של תואר ראשון ומעלה, אבל עושה מאמץ יוצא דופן להנגיש את החומר, כך שיכול להתאים לילדים עם הנחייה. הסרטונים באנגלית, אבל לחלק יש תרגום (טקסט) לעברית. הוא גם קרא לצופים להוסיף תרגום (ולשלוח לו). זה יכול להיות שירות מצוין לקהילה!</p>
     </li>
     <li>
       <p class="title">פלייליסטים מומלצים ביוטיוב על מתמטיקה לילדים (בעברית)</p>
-      <ul class="links named">
-        <li><span class="linkname">חשבון פשוט</span><a class="url" href="https://www.youtube.com/watch?v=RDy_mpnPudg&amp;list=PLuEFhJaDsHzAutLjVceEOoDUGBHDb30Vy">https://www.youtube.com/watch?v=RDy_mpnPudg&amp;list=PLuEFhJaDsHzAutLjVceEOoDUGBHDb30Vy</a></li>
-        <li><span class="linkname">גיאומטריה: נא להכיר</span><a class="url" href="https://www.youtube.com/watch?v=lgZtuGgAZvo&amp;list=PLuEFhJaDsHzC8I6VMedcHTPZJJXjowBAs">https://www.youtube.com/watch?v=lgZtuGgAZvo&amp;list=PLuEFhJaDsHzC8I6VMedcHTPZJJXjowBAs</a></li>
-        <li><span class="linkname">מתי מתוק בלש מתמטי</span><a class="url" href="https://www.youtube.com/watch?v=nyWxRwk_Lgc&amp;list=PLuEFhJaDsHzBeExIINXiNLLCJmQDOpoMc">https://www.youtube.com/watch?v=nyWxRwk_Lgc&amp;list=PLuEFhJaDsHzBeExIINXiNLLCJmQDOpoMc</a></li>
-        <li><span class="linkname">תורת המספרים לילדים</span><a class="url" href="https://www.youtube.com/watch?v=PQYes5ij2KI&amp;list=PLuEFhJaDsHzA50THkWlyxGw0U0PV4Db4f">https://www.youtube.com/watch?v=PQYes5ij2KI&amp;list=PLuEFhJaDsHzA50THkWlyxGw0U0PV4Db4f</a></li>
+      <ul class="links">
+        <li><a href="https://www.youtube.com/watch?v=RDy_mpnPudg&amp;list=PLuEFhJaDsHzAutLjVceEOoDUGBHDb30Vy">חשבון פשוט</a></li>
+        <li><a href="https://www.youtube.com/watch?v=lgZtuGgAZvo&amp;list=PLuEFhJaDsHzC8I6VMedcHTPZJJXjowBAs">גיאומטריה: נא להכיר</a></li>
+        <li><a href="https://www.youtube.com/watch?v=nyWxRwk_Lgc&amp;list=PLuEFhJaDsHzBeExIINXiNLLCJmQDOpoMc">מתי מתוק בלש מתמטי</a></li>
+        <li><a href="https://www.youtube.com/watch?v=PQYes5ij2KI&amp;list=PLuEFhJaDsHzA50THkWlyxGw0U0PV4Db4f">תורת המספרים לילדים</a></li>
       </ul>
     </li>
   </ol>
@@ -236,44 +222,39 @@
   <h2>מדמ"ח</h2>
   <ol class="items">
     <li>
-      <p class="title">CodeMonkey</p>
-      <ul class="links"><li><a class="url" href="https://www.codemonkey.com/">https://www.codemonkey.com/</a></li></ul>
+      <p class="title"><a href="https://www.codemonkey.com/">CodeMonkey</a></p>
       <p>לימוד תכנות לילדים. קהל היעד (ודרישות ההנחייה) דומה לזה של <a href="#matific">"עשר אצבעות"</a>. הדגש העיקרי הוא על קונספטים תכנותיים ועל מנשק משתמש ולא על אלגוריתמים.</p>
     </li>
     <li>
-      <p class="title">Project Euler</p>
-      <ul class="links"><li><a class="url" href="https://projecteuler.net/">https://projecteuler.net/</a></li></ul>
+      <p class="title"><a href="https://projecteuler.net/">Project Euler</a></p>
       <p>רשימת בעיות תכנות. מאוד אלגוריתמי (ודי מתמטי), לא מלמד דבר על הנדסת תוכנה, מנשק משתמש וכדומה. דורש הנחייה כבדה יחסית לצעירים (לפחות בהתחלה). דורש גם ידע מתמטי בתורת המספרים הבסיסית (מספרים ראשוניים ושאריות).</p>
     </li>
     <li>
-      <p class="title">המכונה האחת</p>
-      <ul class="links"><li><a class="url" href="https://rami5743.github.io/TheOneMachine">https://rami5743.github.io/TheOneMachine</a></li></ul>
+      <p class="title"><a href="https://rami5743.github.io/TheOneMachine">המכונה האחת</a></p>
       <p>לומדה שאני כותב. עדיין בפיתוח. הלומדה היא על פי הקורס <a href="#nand2tetris">From nand to Tetris</a> מהסעיף הבא.</p>
     </li>
     <li id="nand2tetris">
-      <p class="title">From nand to Tetris</p>
+      <p class="title"><a href="https://www.nand2tetris.org/">From nand to Tetris</a></p>
       <ul class="links">
-        <li><a class="url" href="https://www.nand2tetris.org/">https://www.nand2tetris.org/</a></li>
-        <li><a class="url" href="https://campus.gov.il/course/huji-acd-huji-nand2tetris/">https://campus.gov.il/course/huji-acd-huji-nand2tetris/</a></li>
-        <li><a class="url" href="https://www.youtube.com/watch?v=LqirVc5SlW0&amp;list=PLrDd_kMiAuNmSb-CKWQqq9oBFN_KNMTaI">https://www.youtube.com/watch?v=LqirVc5SlW0&amp;list=PLrDd_kMiAuNmSb-CKWQqq9oBFN_KNMTaI</a></li>
+        <li><a href="https://campus.gov.il/course/huji-acd-huji-nand2tetris/">הקורס בקמפוס IL</a></li>
+        <li><a href="https://www.youtube.com/watch?v=LqirVc5SlW0&amp;list=PLrDd_kMiAuNmSb-CKWQqq9oBFN_KNMTaI">ההרצאות ביוטיוב</a></li>
       </ul>
       <p>קורס מצוין בקמפוס IL.</p>
       <p>מיועד לתלמידי שנה א' בתואר ראשון במדמ"ח אבל מתאים גם לקהל הרחב ועם הנחייה גם לילדים.</p>
       <p>כדאי (אבל לא חובה) להכיר קצת תכנות לפני זה (למשל משימוש בשני הסעיפים הקודמים). הקורס מסביר איך בונים מחשב ותשתית תוכנה כמעט מאפס.</p>
       <p>הקורס מכיל הרצאות, משימות, וחבילת תוכנה המאפשרת לבדוק ביצוע נכון של המשימות.</p>
-      <p>את חבילת התוכנה והמשימות מורידים כאן:</p>
-      <ul class="links"><li><a class="url" href="https://drive.google.com/file/d/1KcFPj8KQ_QAHheFmLCqs5iqC_0NCndvs/view">https://drive.google.com/file/d/1KcFPj8KQ_QAHheFmLCqs5iqC_0NCndvs/view</a></li></ul>
+      <p>את חבילת התוכנה והמשימות מורידים <a href="https://drive.google.com/file/d/1KcFPj8KQ_QAHheFmLCqs5iqC_0NCndvs/view">כאן</a>.</p>
       <p>ההרצאות בעברית אבל בשפה גבוהה למדי, כך שלילדים צעירים נדרשת הנחייה בדרך כלל. מבחינת חומר נדרשת די מעט הנחייה החל מגיל 7-9.</p>
     </li>
     <li>
       <p><a href="#young-mathematician">"המתמטיקאי הצעיר"</a> פתח לאחרונה חוגים במדמ"ח.</p>
     </li>
     <li>
-      <ul class="links"><li><a class="url" href="https://campus.gov.il/course/tau-acd-rfp2-cspythonintroduction-he/">https://campus.gov.il/course/tau-acd-rfp2-cspythonintroduction-he/</a></li></ul>
+      <p class="go"><a href="https://campus.gov.il/course/tau-acd-rfp2-cspythonintroduction-he/">הקורס בקמפוס IL</a></p>
       <p>קורס בסיסי של אוניברסיטת תל-אביב בתכנות ומדעי מחשב.</p>
     </li>
     <li>
-      <ul class="links"><li><a class="url" href="https://campus.gov.il/course/cs-gov-pythonselfpy101-he">https://campus.gov.il/course/cs-gov-pythonselfpy101-he</a></li></ul>
+      <p class="go"><a href="https://campus.gov.il/course/cs-gov-pythonselfpy101-he">הקורס בקמפוס IL</a></p>
       <p>קורס בסיסי בשפת פיתון בקמפוס IL. קצת יותר תובעני מהקודם, אבל מכיל קצת חוסרים בהסברים.</p>
     </li>
   </ol>
@@ -284,19 +265,19 @@
   <p class="sub">קורסים בקמפוס IL:</p>
   <ol class="items">
     <li>
-      <ul class="links"><li><a class="url" href="https://campus.gov.il/course/tau-acd-rfp2-physicsintro101-he">https://campus.gov.il/course/tau-acd-rfp2-physicsintro101-he</a></li></ul>
+      <p class="go"><a href="https://campus.gov.il/course/tau-acd-rfp2-physicsintro101-he">לקורס</a></p>
       <p>קורס מצוין, שמסביר את האינטואיציה הפיזיקלית ואת הדרך המדעית לחשוב על דברים, אבל שטחי למדי.</p>
     </li>
     <li id="physics-mechanics-biu">
-      <ul class="links"><li><a class="url" href="https://campus.gov.il/course/biu-acd-biu-introductiontophysicsmechanics-he">https://campus.gov.il/course/biu-acd-biu-introductiontophysicsmechanics-he</a></li></ul>
+      <p class="go"><a href="https://campus.gov.il/course/biu-acd-biu-introductiontophysicsmechanics-he">לקורס</a></p>
       <p>קורס מעמיק ומקיף יותר, אבל חסר את היתרונות שיש לקורס הקודם.</p>
     </li>
     <li>
-      <ul class="links"><li><a class="url" href="https://campus.gov.il/course/moe-edu-matric-physicsmechanics-he">https://campus.gov.il/course/moe-edu-matric-physicsmechanics-he</a></li></ul>
+      <p class="go"><a href="https://campus.gov.il/course/moe-edu-matric-physicsmechanics-he">לקורס</a></p>
       <p>לא בדקתי, אבל קיבלתי המלצות טובות. מבחינת נושאים נראה דומה ל-<a href="#physics-mechanics-biu">(2)</a> אבל קצת פחות מקיף (אין אנרגיה).</p>
     </li>
     <li>
-      <ul class="links"><li><a class="url" href="https://campus.gov.il/course/moe-edu-matric-physicselectricity-he">https://campus.gov.il/course/moe-edu-matric-physicselectricity-he</a></li></ul>
+      <p class="go"><a href="https://campus.gov.il/course/moe-edu-matric-physicselectricity-he">לקורס</a></p>
       <p>לא בדקתי כלל.</p>
     </li>
   </ol>
@@ -304,9 +285,9 @@
 
 <section class="chem">
   <h2>כימיה</h2>
-  <ul class="links"><li><a class="url" href="https://campus.gov.il/course/tau-acd-rfp2-introductiontochemistry101-he">https://campus.gov.il/course/tau-acd-rfp2-introductiontochemistry101-he</a></li></ul>
+  <p class="go"><a href="https://campus.gov.il/course/tau-acd-rfp2-introductiontochemistry101-he">לקורס</a></p>
   <p>קורס טוב מאוד. יש גם קורס המשך:</p>
-  <ul class="links"><li><a class="url" href="https://campus.gov.il/course/tau-acd-nrfp-introductiontochemistry102-he/">https://campus.gov.il/course/tau-acd-nrfp-introductiontochemistry102-he/</a></li></ul>
+  <p class="go"><a href="https://campus.gov.il/course/tau-acd-nrfp-introductiontochemistry102-he/">לקורס ההמשך</a></p>
   <p style="margin-bottom:26px">לא רע, אבל מכיל הרבה טעויות.</p>
 </section>
 
@@ -315,14 +296,14 @@
   <p class="sub">ערוצי יוטיוב באנגלית:</p>
   <ol class="items">
     <li>
-      <ul class="links"><li><a class="url" href="https://www.youtube.com/@PracticalEngineeringChannel">https://www.youtube.com/@PracticalEngineeringChannel</a></li></ul>
+      <p class="title"><a href="https://www.youtube.com/@PracticalEngineeringChannel">Practical Engineering</a></p>
       <p>ערוץ מקצועי ומעניין, לפעמים קצת יבש.</p>
     </li>
     <li>
       <p>ערוצים חביבים בהנדסה. על הגבול בין הבידור להשכלה:</p>
       <ul class="links">
-        <li><a class="url" href="https://www.youtube.com/channel/UCY1kMZp36IQSyNx_9h4mpCg">https://www.youtube.com/channel/UCY1kMZp36IQSyNx_9h4mpCg</a></li>
-        <li><a class="url" href="https://www.youtube.com/channel/UC6107grRI4m0o2-emgoDnAA">https://www.youtube.com/channel/UC6107grRI4m0o2-emgoDnAA</a></li>
+        <li><a href="https://www.youtube.com/channel/UCY1kMZp36IQSyNx_9h4mpCg">Mark Rober</a></li>
+        <li><a href="https://www.youtube.com/channel/UC6107grRI4m0o2-emgoDnAA">SmarterEveryDay</a></li>
       </ul>
     </li>
   </ol>
@@ -333,11 +314,11 @@
   <p class="sub">ערוצי מדע נוספים ביוטיוב (באנגלית)</p>
   <ol class="items">
     <li>
-      <ul class="links"><li><a class="url" href="https://www.youtube.com/channel/UCHnyfMqiRRG1u-2MsSQLbXA">https://www.youtube.com/channel/UCHnyfMqiRRG1u-2MsSQLbXA</a></li></ul>
+      <p class="title"><a href="https://www.youtube.com/channel/UCHnyfMqiRRG1u-2MsSQLbXA">Veritasium</a></p>
       <p>אחד מערוצי היוטיוב החביבים עליי (לדעתי, שני רק ל-<a href="#blue3brown1">3blue1brown</a>). מאוד מקצועי ומאוד נגיש. עוסק בתחומים על כל הספקטרום המדעי ובמגוון רחב של רמות.</p>
     </li>
     <li>
-      <ul class="links"><li><a class="url" href="https://www.youtube.com/channel/UCsXVk37bltHxD1rDPwtNM8Q">https://www.youtube.com/channel/UCsXVk37bltHxD1rDPwtNM8Q</a></li></ul>
+      <p class="title"><a href="https://www.youtube.com/channel/UCsXVk37bltHxD1rDPwtNM8Q">Kurzgesagt – In a Nutshell</a></p>
       <p>ערוץ לא רע במדע כללי ובמה שמסביב. מקצועי, מקיף ונגיש. סובל ממספר חסרונות:</p>
       <ol class="notes" type="א">
         <li>עוסק יותר מדי בפוליטיקה. מנסה להיות אובייקטיבי וכמובן לא ממש מצליח.</li>
@@ -346,7 +327,7 @@
         <li>הגרפיקה מתאימה לטעם מאוד ייחודי (לא שלי).</li>
       </ol>
       <p>לסיכום, ממליץ לבדוק לפני שמראים לילדים. פלייליסט מומלץ מהערוץ:</p>
-      <ul class="links"><li><a class="url" href="https://www.youtube.com/playlist?list=PLFs4vir_WsTwEd-nJgVJCZPNL3HALHHpF">https://www.youtube.com/playlist?list=PLFs4vir_WsTwEd-nJgVJCZPNL3HALHHpF</a></li></ul>
+      <ul class="links"><li><a href="https://www.youtube.com/playlist?list=PLFs4vir_WsTwEd-nJgVJCZPNL3HALHHpF">The Universe and Space stuff</a></li></ul>
     </li>
   </ol>
 </section>
@@ -355,11 +336,11 @@
   <h2>אוריינות וידע כללי</h2>
   <ol class="items">
     <li>
-      <ul class="links"><li><a class="url" href="https://www.hachtava.co.il/">https://www.hachtava.co.il/</a></li></ul>
+      <p class="title"><a href="https://www.hachtava.co.il/">הכתבה</a></p>
       <p>אתר עם הכתבות ולימודי הקלדה עיוורת בעברית ואנגלית.</p>
     </li>
     <li>
-      <ul class="links"><li><a class="url" href="https://world-geography-games.com/">https://world-geography-games.com/</a></li></ul>
+      <p class="title"><a href="https://world-geography-games.com/">World Geography Games</a></p>
       <p>משחק ללימוד גאוגרפיה.</p>
     </li>
   </ol>
@@ -369,23 +350,20 @@
   <h2>שונות</h2>
   <ol class="items">
     <li>
-      <p>חומרים לימודיים בנושאים שונים שהכנתי \ אספתי (פוסטרים \ דפי עבודה ועוד):</p>
-      <ul class="links"><li><a class="url" href="https://www.dropbox.com/sh/56uxvg4dzvzog1h/AAALmDhUbcKNcsmIsBFmBsC8a?dl=0">https://www.dropbox.com/sh/56uxvg4dzvzog1h/AAALmDhUbcKNcsmIsBFmBsC8a?dl=0</a></li></ul>
+      <p><a href="https://www.dropbox.com/sh/56uxvg4dzvzog1h/AAALmDhUbcKNcsmIsBFmBsC8a?dl=0">חומרים לימודיים בנושאים שונים שהכנתי \ אספתי (פוסטרים \ דפי עבודה ועוד)</a></p>
     </li>
     <li>
-      <p>משחקים שיצרנו:</p>
-      <ul class="links"><li><a class="url" href="https://www.thegamecrafter.com/designers/science-games">https://www.thegamecrafter.com/designers/science-games</a></li></ul>
+      <p><a href="https://www.thegamecrafter.com/designers/science-games">משחקים שיצרנו</a></p>
     </li>
     <li>
       <p>מודלים תלת-ממדיים שיצרתי:</p>
       <ul class="links">
-        <li><a class="url" href="https://www.wisdom.weizmann.ac.il/~aizenr/8Other/1Math_Illustrations/3d_models/index.html">https://www.wisdom.weizmann.ac.il/~aizenr/8Other/1Math_Illustrations/3d_models/index.html</a></li>
-        <li><a class="url" href="https://www.dropbox.com/scl/fo/54wu2emoy97vymbo5cz48/AByXLca823-7ojTnqz8hxrM?rlkey=q2y35j7nfrwm4u4xh5p6ydsw6&amp;dl=0">https://www.dropbox.com/scl/fo/54wu2emoy97vymbo5cz48/AByXLca823-7ojTnqz8hxrM?rlkey=q2y35j7nfrwm4u4xh5p6ydsw6&amp;dl=0</a></li>
+        <li><a href="https://www.wisdom.weizmann.ac.il/~aizenr/8Other/1Math_Illustrations/3d_models/index.html">בדף שלי באתר מכון ויצמן</a></li>
+        <li><a href="https://www.dropbox.com/scl/fo/54wu2emoy97vymbo5cz48/AByXLca823-7ojTnqz8hxrM?rlkey=q2y35j7nfrwm4u4xh5p6ydsw6&amp;dl=0">בדרופבוקס</a></li>
       </ul>
     </li>
     <li>
-      <p>מצגת נחמדה:</p>
-      <ul class="links"><li><a class="url" href="https://htwins.net/scale2/">https://htwins.net/scale2/</a></li></ul>
+      <p><a href="https://htwins.net/scale2/">מצגת נחמדה</a></p>
     </li>
   </ol>
 </section>
