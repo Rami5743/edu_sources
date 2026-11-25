@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="כובע פרופסור">
+  <rect width="64" height="64" rx="12" fill="#f3ebe0"/>
+  <!-- cap body -->
+  <path d="M19 27v12c0 5 26 5 26 0V27z" fill="#4a3a2c"/>
+  <!-- mortarboard -->
+  <path d="M32 9 61 22 32 35 3 22z" fill="#2a211a"/>
+  <circle cx="32" cy="22" r="2.6" fill="#c08a3e"/>
+  <!-- tassel -->
+  <path d="M55.5 24v12" stroke="#c08a3e" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+  <circle cx="55.5" cy="38" r="3.2" fill="#c08a3e"/>
+  <path d="M53 40.5l-1.5 7M55.5 41v7M58 40.5l1.5 7" stroke="#c08a3e" stroke-width="2.1" stroke-linecap="round" fill="none"/>
+</svg>
